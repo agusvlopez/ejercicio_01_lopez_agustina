@@ -1,0 +1,9 @@
+body{font-family:verdana;}
+.red{color:red;text-transform: uppercase;text-decoration: line-through;}
+.green{color:green; font-weight: bold; text-transform: uppercase}
+[v-cloak] { display: none;}
+li{display: inline-block; padding: 30px; vertical-align: top;}
+img{margin-top: 30px; border: solid 4px grey;padding: 10px}
+p{text-indent: 20px;}
+h1{text-align: center;}
+h1 + p{color: grey; text-indent: 0; width: 90%; margin: 0 auto}
