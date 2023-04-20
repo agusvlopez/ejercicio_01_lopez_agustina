@@ -21,7 +21,7 @@
 				<img :src="item.portada" :alt="item.alt"/>
 
 				<p v-for="c in item.consola"> {{c}}</p>
-				<p></p>
+				<p :class="item.calificacion >= 8 ? 'green' : 'red'"> Calificación: {{item.calificacion}}</p>
 			</li>
 		</ul>
 	</div>
