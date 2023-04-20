@@ -46,5 +46,12 @@ const app = new Vue ({
             },
         ]
 
+    },
+    methods: {
+
+        mostrarCaliMayor () {
+            this.calificacion > 6
+            console.log(this.calificacion);
+        }
     }
 });

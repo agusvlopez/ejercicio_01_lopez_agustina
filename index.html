@@ -15,13 +15,13 @@
 		<p>Nuestra lista es exigente con las calificaciones, solo te mostraremos juegos que tengan una calificacion mayor a 6 y resaltaremos las super recomendadas que tengan calificación de 8 en adelante.</p>
 
 		<ul>
-			<li>
-				<h2></h2>
+			<li v-for="item in juegos" v-if="item.calificacion > 6">
+				<h2>{{item.nombre}} {{item.anio}}</h2>
 								
-				<img />
+				<img :src="item.portada" :alt="item.alt"/>
 
-				<p> </p>
-				<p> </p>
+				<p v-for="c in item.consola"> {{c}}</p>
+				<p></p>
 			</li>
 		</ul>
 	</div>
